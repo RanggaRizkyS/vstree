@@ -5,6 +5,7 @@ var treeLvl = 1;
 if (treeLvl === 1) {
 	document.getElementById("btn-3").innerHTML = "Cost 500";
 }
+
 function shopClick() {
 	document.getElementById("shopHide").style.display = "inline";
 	if (treeLvl === 1) {
