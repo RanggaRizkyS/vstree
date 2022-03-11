@@ -12,7 +12,7 @@ function punchClick() {
            type: "success",
            timer: 5000
            });
-           (function ) {
+           function() {
               location.reload(true);
               tr.hide();
            };
