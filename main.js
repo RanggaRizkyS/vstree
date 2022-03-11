@@ -33,7 +33,7 @@ function treeClick() {
 }
 
 function punchClick() {
-	localStorage.removeItem("coins")
+	localStorage.removeItem("coins1")
 	var punch = Math.round(Math.random()*5)+5;
 	tree_healt -= punch;
 	if (tree_healt < 0) {
@@ -55,7 +55,7 @@ function punchClick() {
 	var coinEarnsuc = coins += coinEarn
 	console.log(coins);
 	localStorage.setItem("tree_healt", tree_healt);
-    localStorage.setItem("coins1", coins1);
+    localStorage.setItem("coins1", coinEarnsuc);
     localStorage.setItem("treeLvl", treeLvl);
     document.getElementById("coins").innerHTML = localStorage.getItem("coins1");
 }
