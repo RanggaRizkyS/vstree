@@ -1,5 +1,19 @@
 var tree_healt = 100;
 var coins = 0;
+var punchLvl = 1;
+
+function shopClick() {
+	document.getElementById("shopHide").style.display = "inline";
+	if (punchLvl === 1) {
+		function punchClick() {
+			if (coins > 500) {
+				tree_healt += 200;
+				coins -= 500;
+				console.log(coins);
+			}
+		}
+	}
+}
 
 function punchClick() {
 	var punch = Math.round(Math.random()*5)+5;
