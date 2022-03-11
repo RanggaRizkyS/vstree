@@ -55,7 +55,7 @@ function punchClick() {
 	var coinEarnsuc = coins += coinEarn
 	console.log(coins);
 	localStorage.setItem("tree_healt", tree_healt);
-    localStorage.setItem("coins1", coinEarnsuc);
+    localStorage.setItem("coins1", coins1);
     localStorage.setItem("treeLvl", treeLvl);
     document.getElementById("coins").innerHTML = coins;
 }
