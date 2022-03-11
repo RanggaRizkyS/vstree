@@ -16,6 +16,15 @@ function shopClick() {
 	}
 }
 
+function treeClick() {
+			if (coins > 500) {
+				tree_healt += 200;
+				coins -= 500;
+				console.log(coins);
+				console.log(tree_healt);
+			}
+		}
+
 function punchClick() {
 	var punch = Math.round(Math.random()*5)+5;
 	tree_healt -= punch;
