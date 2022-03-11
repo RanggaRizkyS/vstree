@@ -18,11 +18,10 @@ function shopClick() {
 
 function treeClick() {
 	if (treeLvl === 1) {
-		document.getElementById("btn-3").innerHTML = "Cost 500 <i class="fa-solid fa-coins"></i>";
+		document.getElementById("btn-3").innerHTML = "Cost 500";
 		if (coins > 500) {
 			tree_healt += 200;
 			coins -= 500;
-			
 		}
 	}
 }
