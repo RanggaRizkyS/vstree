@@ -1,13 +1,15 @@
+var tree_healt = 100;
+var coins = 0;
+var treeLvl = 1;
 var healt = localStorage.getItem("tree_healt");
 var coins = localStorage.getItem("coins");
 var treelvl = localStorage.getItem("treeLvl");
 
-if (coins === 0) {
-	var tree_healt = 100;
-    var coins = 0;
-    var treeLvl = 1;
+if (coins > 0) {
+	var healt = localStorage.getItem("tree_healt");
+    var coins = localStorage.getItem("coins");
+    var treelvl = localStorage.getItem("treeLvl");
 }
-
 if (treeLvl === 1) {
 	document.getElementById("btn-3").innerHTML = "Cost 500";
 }
