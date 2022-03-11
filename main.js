@@ -2,6 +2,7 @@ var tree_healt = 100;
 var coins = 0;
 var treeLvl = 1;
 localStorage.removeItem("coins")
+localStorage.setItem("coins", coins);
 var healt = localStorage.getItem("tree_healt");
 var coins = localStorage.getItem("coins");
 var treelvl = localStorage.getItem("treeLvl");
