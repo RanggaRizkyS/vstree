@@ -33,7 +33,6 @@ function treeClick() {
 }
 
 function punchClick() {
-	localStorage.removeItem("coins1")
 	var punch = Math.round(Math.random()*5)+5;
 	tree_healt -= punch;
 	if (tree_healt < 0) {
