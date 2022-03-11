@@ -16,7 +16,7 @@ function punchClick() {
               location.reload(true);
               tr.hide();
            };
-		setTimeout(() => { document.getElementById("btn-1").style.display = "inline"; }, 5000);
+		setTimeout(() => { tree_healt += 100; document.getElementById("btn-1").style.display = "inline"; }, 5000);
 	};
 	var coinEarn = Math.round(Math.random()*1)+5;
 	coins += coinEarn
