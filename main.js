@@ -17,13 +17,15 @@ function shopClick() {
 }
 
 function treeClick() {
-			if (coins > 500) {
-				tree_healt += 200;
-				coins -= 500;
-				console.log(coins);
-				console.log(tree_healt);
-			}
+	if (treeLvl === 1) {
+		document.getElementById("btn-3").innerHTML = "Cost 500 <i class="fa-solid fa-coins"></i>";
+		if (coins > 500) {
+			tree_healt += 200;
+			coins -= 500;
+			
 		}
+	}
+}
 
 function punchClick() {
 	var punch = Math.round(Math.random()*5)+5;
