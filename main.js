@@ -52,10 +52,10 @@ function punchClick() {
 	};
 	localStorage.removeItem("coins")
 	var coinEarn = Math.round(Math.random()*1)+9;
-	coins += coinEarn
+	var coinEarnsuc = coins += coinEarn
 	document.getElementById("coins").innerHTML = coins;
 	console.log(coins);
 	localStorage.setItem("tree_healt", tree_healt);
-    localStorage.setItem("coins", coins += coinEarn);
+    localStorage.setItem("coins", coinEarnsuc);
     localStorage.setItem("treeLvl", treeLvl);
 }
