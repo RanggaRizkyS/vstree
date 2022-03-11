@@ -3,7 +3,7 @@ var coins = 0;
 var treeLvl = 1;
 
 if (treeLvl === 1) {
-	document.getElementByClass("btn-3").innerHTML = "Cost 500";
+	document.getElementById("btn-3").innerHTML = "Cost 500";
 }
 
 function shopClick() {
