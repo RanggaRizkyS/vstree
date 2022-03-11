@@ -49,7 +49,6 @@ function punchClick() {
            };
 		setTimeout(() => { tree_healt += 100; document.getElementById("btn-1").style.display = "inline"; }, 5000);
 	};
-	localStorage.removeItem("coins")
 	var coinEarn = Math.round(Math.random()*1)+9;
 	var coinEarnsuc = coins += coinEarn
 	console.log(coins);
