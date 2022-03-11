@@ -21,4 +21,5 @@ function punchClick() {
 	var coinEarn = Math.round(Math.random()*1)+5;
 	coins += coinEarn
 	document.getElementById("coins").innerHTML = coins;
+	console.log(coins);
 }
