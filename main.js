@@ -1,15 +1,16 @@
 var tree_healt = 100;
 var coins = 0;
-var punchLvl = 1;
+var treeLvl = 1;
 
 function shopClick() {
 	document.getElementById("shopHide").style.display = "inline";
-	if (punchLvl === 1) {
-		function punchClick() {
+	if (treeLvl === 1) {
+		function treeClick() {
 			if (coins > 500) {
 				tree_healt += 200;
 				coins -= 500;
 				console.log(coins);
+				console.log(tree_healt);
 			}
 		}
 	}
