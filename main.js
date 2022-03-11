@@ -5,11 +5,6 @@ var healt = localStorage.getItem("tree_healt");
 var coins = localStorage.getItem("coins");
 var treelvl = localStorage.getItem("treeLvl");
 
-if (coins > 0) {
-	var healt = localStorage.getItem("tree_healt");
-    var coins = localStorage.getItem("coins");
-    var treelvl = localStorage.getItem("treeLvl");
-}
 if (treeLvl === 1) {
 	document.getElementById("btn-3").innerHTML = "Cost 500";
 }
@@ -58,6 +53,9 @@ function punchClick() {
 	coins += coinEarn
 	document.getElementById("coins").innerHTML = coins;
 	console.log(coins);
+	localStorage.setItem("tree_healt", tree_healt);
+    localStorage.setItem("coins", coins += coinEarn);
+    localStorage.setItem("treeLvl", treeLvl);
 }
 
 localStorage.setItem("tree_healt", tree_healt);
