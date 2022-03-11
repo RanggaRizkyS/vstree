@@ -51,3 +51,7 @@ function punchClick() {
 	document.getElementById("coins").innerHTML = coins;
 	console.log(coins);
 }
+
+localStorage.setItem("tree_healt", tree_healt);
+localStorage.setItem("coins", coins);
+localStorage.setItem("treeLvl", treeLvl);
