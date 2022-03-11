@@ -2,9 +2,9 @@ var tree_healt = 100;
 var coins = 0;
 var treeLvl = 1;
 var healt = localStorage.getItem("tree_healt");
-var coins = localStorage.getItem("coins");
+var coins1 = localStorage.getItem("coins");
 var treelvl = localStorage.getItem("treeLvl");
-localStorage.removeItem("coins")
+localStorage.removeItem("coins1")
 
 if (treeLvl === 1) {
 	document.getElementById("btn-3").innerHTML = "Cost 500";
