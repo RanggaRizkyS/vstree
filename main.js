@@ -6,12 +6,12 @@ function punchClick() {
 	tree_healt -= punch;
 	if (tree_healt < 0) {
 		document.getElementById("btn-1").style.display = "none";
-		swal({
-           title: "Cooldown",
-           text: "Cooldown in 5 Sec",
-           type: "success",
-           timer: 5000
-           });
+           Swal.fire({
+            title: 'Cooldown',
+            text: 'Cooldown 5 Sec',
+            type: "success",
+            timer: 5000
+           })
            var func = function() {
               location.reload(true);
               tr.hide();
