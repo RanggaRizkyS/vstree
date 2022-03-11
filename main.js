@@ -2,6 +2,9 @@ var tree_healt = 100;
 var coins = 0;
 var treeLvl = 1;
 
+if (treeLvl === 1) {
+	document.getElementById("btn-3").innerHTML = "Cost 500";
+}
 function shopClick() {
 	document.getElementById("shopHide").style.display = "inline";
 	if (treeLvl === 1) {
@@ -14,10 +17,6 @@ function shopClick() {
 			}
 		}
 	}
-}
-
-if (treeLvl === 1) {
-	document.getElementById("btn-3").innerHTML = "Cost 500";
 }
 
 function treeClick() {
