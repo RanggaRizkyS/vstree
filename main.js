@@ -1,7 +1,4 @@
-if (localStorage.getItem("mgo") === 0) {
-	localStorage.setItem("mgo", 1);
-	localStorage.setItem("coins", 0);
-}
+
 localStorage.setItem("mgo", 0);
 var mgo = 0;
 var coins = localStorage.getItem("coins");
@@ -63,6 +60,9 @@ function punchClick() {
 	var coinEarnsuc = c += coinEarn
     document.getElementById("coins").innerHTML = coinEarnsuc;
     localStorage.setItem("coins", coinEarnsuc);
+    if (localStorage.getItem('coins') === null) {
+       localStorage.setItem('coins', coinEarnsuc);  
+    }
 }
 
 function saveClick() {
