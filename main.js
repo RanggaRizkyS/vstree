@@ -1,9 +1,9 @@
 localStorage.setItem("mgo", 0);
-if (localStorage.getItem("mgo") === 0) {
-	localStorage.setItem("mgo", 1);
-	localStorage.setItem("coins", 50);
-};
 var mgo = 0;
+if (mgo === 0) {
+	localStorage.setItem("coins", 0);
+	mgo++;
+}
 var coins = localStorage.getItem("coins");
 var tree_healt = 100;
 var treeLvl = 1;
