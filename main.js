@@ -59,6 +59,7 @@ function punchClick() {
 	var coinEarnsuc = c += coinEarn
     document.getElementById("coins").innerHTML = coinEarnsuc;
     console.log("asu "+coinEarnsuc);
+    localStorage.setItem("coins", coinEarnsuc);
 }
 
 function saveClick() {
