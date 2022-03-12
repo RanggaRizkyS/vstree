@@ -53,6 +53,6 @@ function punchClick() {
 	var coinEarn = Math.round(Math.random()*1)+9;
 	var coinEarnsuc = coin += coinEarn
 	console.log(coin);
-	localStorage.setItem("coins", coinEarnsuc);
+	localStorage.setItem("coins", coin);
     document.getElementById("coins").innerHTML = localStorage.getItem("coins");
 }
