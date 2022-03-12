@@ -8,7 +8,7 @@ var coins = localStorage.getItem("coins");
 var tree_healt = 100;
 var treeLvl = 1;
 
-document.getElementById("coins").innerHTML = localStorage.getItem(coins);
+document.getElementById("coins").innerHTML = coins;
 if (treeLvl === 1) {
 	document.getElementById("btn-3").innerHTML = "Cost 500";
 }
