@@ -51,7 +51,7 @@ function punchClick() {
 		setTimeout(() => { tree_healt += 100; document.getElementById("btn-1").style.display = "inline"; }, 5000);
 	};
 	var coinEarn = Math.round(Math.random()*1)+9;
-	var coinEarnsuc = localStorage.getItem("coins") += coinEarn
+	var coinEarnsuc = coin += coinEarn
 	console.log(coin);
     document.getElementById("coins").innerHTML = coin;
 }
