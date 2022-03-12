@@ -2,7 +2,7 @@ localStorage.setItem("mgo", 0);
 var mgo = 0;
 if(!localStorage.getItem("visited")){
 	localStorage.setItem("coins", 0);
-	localStorage.setItem("visited", true);
+	localStorage.setItem("visited", "yes");
 }
 var coins = localStorage.getItem("coins");
 var tree_healt = 100;
