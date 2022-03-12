@@ -52,6 +52,7 @@ function punchClick() {
 	};
 	var coinEarn = Math.round(Math.random()*1)+9;
 	var y = parseInt(localStorage.getItem("coins").value);
+	console.log(y);
     var z = parseInt(document.getElementById("txt2").value);
     var x = y + z;
 	var coinEarnsuc = coin += coinEarn
