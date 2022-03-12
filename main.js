@@ -12,10 +12,6 @@ if (treeLvl === 1) {
 	document.getElementById("btn-3").innerHTML = "Cost 500";
 }
 
-if(localStorage.getItem("visited")) {
-	document.getElementById("coins").innerHTML = coins;
-}
-
 if (localStorage.getItem("mgo") === 0) {
 	localStorage.setItem("mgo", 1);
 	if (localStorage.getItem('coins') === undefined) {
