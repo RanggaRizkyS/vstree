@@ -4,7 +4,6 @@ if (localStorage.getItem("mgo") === 0) {
 }
 localStorage.setItem("mgo", 0);
 var mgo = 0;
-localStorage.getItem("coins");
 var tree_healt = 100;
 var treeLvl = 1;
 
