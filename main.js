@@ -11,7 +11,9 @@ if (treeLvl === 1) {
 
 if (localStorage.getItem("mgo") === 0) {
 	localStorage.setItem("mgo", 1);
-	localStorage.setItem("coins", 0);
+	if (localStorage.getItem('coins') === null) {
+       localStorage.setItem('coins', coinEarnsuc);  
+    }
 }
 
 function shopClick() {
@@ -59,10 +61,10 @@ function punchClick() {
     var c = parseInt(localStorage.getItem("coins"));
 	var coinEarnsuc = c += coinEarn
     document.getElementById("coins").innerHTML = coinEarnsuc;
-    localStorage.setItem("coins", coinEarnsuc);
     if (localStorage.getItem('coins') === null) {
        localStorage.setItem('coins', coinEarnsuc);  
     }
+    localStorage.setItem("coins", coinEarnsuc);
 }
 
 function saveClick() {
