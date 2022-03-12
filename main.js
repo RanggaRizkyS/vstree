@@ -51,10 +51,6 @@ function punchClick() {
 		setTimeout(() => { tree_healt += 100; document.getElementById("btn-1").style.display = "inline"; }, 5000);
 	};
 	var coinEarn = Math.round(Math.random()*1)+9;
-	var y = parseInt(localStorage.getItem("coins").value);
-	console.log(y);
-    var z = parseInt(document.getElementById("txt2").value);
-    var x = y + z;
     var c = parseInt(localStorage.getItem("coins").value);
 	var coinEarnsuc = c += coinEarn
     document.getElementById("coins").innerHTML = coinEarnsuc;
