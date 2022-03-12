@@ -1,13 +1,15 @@
+var mgo = 0;
 localStorage.getItem("coins");
-if (localStorage.getItem("coins") = NaN) {
-	localStorage.setItem("coins", coin);
-}
 var tree_healt = 100;
 var treeLvl = 1;
 
 if (treeLvl === 1) {
 	document.getElementById("btn-3").innerHTML = "Cost 500";
 }
+
+if (mgo === 0) {
+	mgo++;
+	localStorage.setItem("coins", 0);
 
 function shopClick() {
 	document.getElementById("shopHide").style.display = "inline";
