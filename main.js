@@ -2,7 +2,7 @@ var tree_healt = 100;
 var coins = 0;
 var treeLvl = 1;
 var healt = localStorage.getItem("tree_healt");
-var coins1 = localStorage.getItem("coins1");
+var coins2 = localStorage.getItem("coins1");
 var treelvl = localStorage.getItem("treeLvl");
 
 if (treeLvl === 1) {
