@@ -1,9 +1,6 @@
 var tree_healt = 100;
 var coins = 0;
 var treeLvl = 1;
-var healt = localStorage.getItem("tree_healt");
-var coins2 = localStorage.getItem("coins1");
-var treelvl = localStorage.getItem("treeLvl");
 
 if (treeLvl === 1) {
 	document.getElementById("btn-3").innerHTML = "Cost 500";
@@ -52,8 +49,5 @@ function punchClick() {
 	var coinEarn = Math.round(Math.random()*1)+9;
 	var coinEarnsuc = coins += coinEarn
 	console.log(coins);
-	localStorage.setItem("tree_healt", tree_healt);
-    localStorage.setItem("coins1", coinEarnsuc);
-    localStorage.setItem("treeLvl", treeLvl);
     document.getElementById("coins").innerHTML = localStorage.getItem("coins1");
 }
