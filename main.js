@@ -1,5 +1,5 @@
 localStorage.getItem("coins");
-if (localStorage.getItem("coins") < 0) {
+if (localStorage.getItem("coins") = NaN) {
 	localStorage.setItem("coins", coin);
 }
 var tree_healt = 100;
