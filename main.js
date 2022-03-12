@@ -18,6 +18,7 @@ if (localStorage.getItem("mgo") === 0) {
        localStorage.setItem('coins', coinEarnsuc);  
     }
 }
+document.getElementById("coins").innerHTML = coins;
 
 function shopClick() {
 	document.getElementById("shopHide").style.display = "inline";
@@ -73,5 +74,3 @@ function punchClick() {
 function saveClick() {
 	localStorage.setItem("coins", coin);
 }
-
-document.getElementById("coins").innerHTML = coinEarnsuc;
