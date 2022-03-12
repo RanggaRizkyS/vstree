@@ -10,6 +10,7 @@ if (treeLvl === 1) {
 if (mgo === 0) {
 	mgo++;
 	localStorage.setItem("coins", 0);
+}
 
 function shopClick() {
 	document.getElementById("shopHide").style.display = "inline";
