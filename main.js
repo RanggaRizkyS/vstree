@@ -1,6 +1,6 @@
 if (localStorage.getItem("mgo") === 0) {
-	localStorage.setItem("mgo", 1);
-	localStorage.setItem("coins", 0);
+	localStorage.setItem("mgo", "1");
+	localStorage.setItem("coins", "0");
 }
 localStorage.setItem("mgo", 0);
 var mgo = 0;
