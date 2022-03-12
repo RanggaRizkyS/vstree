@@ -2,7 +2,6 @@ localStorage.getItem("coins");
 var tree_healt = 100;
 var coin = 0;
 var treeLvl = 1;
-var yes = localStorage.getItem("coins");
 if (localStorage.getItem("coins") < 0) {
 	localStorage.setItem("coins", coin);
 }
@@ -54,8 +53,8 @@ function punchClick() {
 	var coinEarn = Math.round(Math.random()*1)+9;
 	var coinEarnsuc = coin += coinEarn
 	console.log(coin);
-	localStorage.setItem("coins", coin);
-    document.getElementById("coins").innerHTML = yes;
+    document.getElementById("coins").innerHTML = coins;
+    localStorage.setItem("coins", coinEarnsuc);
 }
 
 function saveClick() {
