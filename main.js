@@ -1,4 +1,4 @@
-const CrytoJS = "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+const CrytoJS = require("https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js")
 
 localStorage.setItem("mgo", 0);
 var mgo = 0;
