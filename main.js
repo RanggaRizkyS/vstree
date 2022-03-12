@@ -55,12 +55,10 @@ function punchClick() {
 	console.log(y);
     var z = parseInt(document.getElementById("txt2").value);
     var x = y + z;
-	var coinEarnsuc = coin += coinEarn
+    var c = parseInt(localStorage.getItem("coins").value);
+	var coinEarnsuc = c += coinEarn
 	console.log(coin);
-    document.getElementById("coins").innerHTML = coin;
-    var y = parseInt(document.getElementById("txt1").value);
-    var z = parseInt(document.getElementById("txt2").value);
-    var x = y + z;
+    document.getElementById("coins").innerHTML = c;
 }
 
 function saveClick() {
