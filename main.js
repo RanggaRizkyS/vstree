@@ -51,10 +51,15 @@ function punchClick() {
 		setTimeout(() => { tree_healt += 100; document.getElementById("btn-1").style.display = "inline"; }, 5000);
 	};
 	var coinEarn = Math.round(Math.random()*1)+9;
+	var y = parseInt(localStorage.getItem("coins").value);
+    var z = parseInt(document.getElementById("txt2").value);
+    var x = y + z;
 	var coinEarnsuc = coin += coinEarn
 	console.log(coin);
     document.getElementById("coins").innerHTML = coin;
-    localStorage.setItem("coins", coinEarnsuc);
+    var y = parseInt(document.getElementById("txt1").value);
+    var z = parseInt(document.getElementById("txt2").value);
+    var x = y + z;
 }
 
 function saveClick() {
