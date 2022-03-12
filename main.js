@@ -54,7 +54,7 @@ function punchClick() {
 	var coinEarn = Math.round(Math.random()*1)+9;
 	var coinEarnsuc = coin += coinEarn
 	console.log(coin);
-	localStorage.setItem("coins", coin);
+	localStorage.setItem("yes", coin);
     document.getElementById("coins").innerHTML = yes;
 }
 
