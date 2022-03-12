@@ -2,6 +2,8 @@ localStorage.getItem("coins");
 if (localStorage.getItem("coins") < 0) {
 	localStorage.setItem("coins", coin);
 }
+var tree_healt = 100;
+var treeLvl = 1;
 
 if (treeLvl === 1) {
 	document.getElementById("btn-3").innerHTML = "Cost 500";
