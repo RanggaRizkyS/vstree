@@ -1,6 +1,9 @@
 localStorage.setItem("mgo", 0);
 var mgo = 0;
-var encrypted = CryptoJS.AES.encrypt("CoinEnc", localStorage.getItem("coins"));
+var encrypted = CryptoJS.AES.encrypt(localStorage.setItem("coins"), "coinsEnc");
+console.log(encrypted);
+var decrypted = CryptoJS.AES.decrypt(localStorage.setItem("coins"), "coinsEnc");
+console.log(decrypted);
 if(!localStorage.getItem("visited")){
 	localStorage.setItem("coins", 0);
 	localStorage.setItem("visited", "yes");
