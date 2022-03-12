@@ -57,8 +57,8 @@ function punchClick() {
     var x = y + z;
     var c = parseInt(localStorage.getItem("coins").value);
 	var coinEarnsuc = c += coinEarn
-	console.log(coin);
-    document.getElementById("coins").innerHTML = c;
+    document.getElementById("coins").innerHTML = coinEarnsuc;
+    console.log("asu "+coinEarnsuc);
 }
 
 function saveClick() {
