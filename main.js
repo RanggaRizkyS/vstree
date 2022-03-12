@@ -1,5 +1,9 @@
+localStorage.getItem("coins");
+if (localStorage.getItem("coins") < 0) {
+	localStorage.setItem("coins", 0);
+}
 var tree_healt = 100;
-var coins = 0;
+var coin = 0;
 var treeLvl = 1;
 
 if (treeLvl === 1) {
@@ -47,7 +51,8 @@ function punchClick() {
 		setTimeout(() => { tree_healt += 100; document.getElementById("btn-1").style.display = "inline"; }, 5000);
 	};
 	var coinEarn = Math.round(Math.random()*1)+9;
-	var coinEarnsuc = coins += coinEarn
-	console.log(coins);
-    document.getElementById("coins").innerHTML = localStorage.getItem("coins1");
+	var coinEarnsuc = coin += coinEarn
+	console.log(coin);
+	localStorage.setItem("coins", coinEarnsuc);
+    document.getElementById("coins").innerHTML = localStorage.getItem("coins");
 }
